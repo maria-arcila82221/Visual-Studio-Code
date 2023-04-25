@@ -1,0 +1,15 @@
+
+h1{
+    color:blue;
+    background-color:aquamarine;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.clase1{
+    background-color:blueviolet;
+    color:aliceblue;
+}
+
+#identificador{
+    color:rgb(207, 120, 120);
+}
