@@ -1,0 +1,30 @@
+/*header {
+    background: green;
+}
+
+footer {
+    background: green;
+}*/
+
+h1 {
+    font-size: 20px; /*tamaño*/
+    font-family: sans-serif; /*fuente*/
+    font-weight: bold; /*cambio de peso a las fuentes: grosor de la letra. lighter delgada, bold gruesa*/
+}
+
+h2 {
+    /*font-weight: bold;
+    font-size: 14px;           <--reglas por separado
+    font-family: sans-serif;*/
+    font: bold 14px sans-serif; /*lo mismo pero en una sola regla*/
+}
+
+/*las reglas se le aplicaran a todos estos elementos*/
+header, section, footer, aside, nav, article, hgroup {
+    /*border: 1px solid black; recuadro de un 1px, solid(negro)*/
+    display: block; /*para asegurarse de que todos los elementos sean en bloque*/
+}
+
+body {
+    text-align: center;
+}
