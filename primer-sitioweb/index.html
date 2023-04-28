@@ -43,7 +43,7 @@
     </head>
     <body>
 
-        <div>
+        <div class="agrupar">
             <!--los elementos div no le dan mas informacion al navegador, sino para crear otra division no muy tipica. es otro elemento html
             <div>
                 Contenido Cualquiera
@@ -56,13 +56,13 @@
                 <h1 style="background: aqua">Mi Blog</h1>
             <header class="green"> 
             -->
-            <header>
+            <header class="cabecera">
                 <h1>Mi Blog</h1>
             </header>
 
             <!--<nav style="background: blue">
             <nav id="navegacion">-->
-            <nav>
+            <nav class="menu">
                 <ul> <!--lista desordenada en español: tiene un elemento html dentro que permite añadir un elemento de esta lista desordenada-->
                     <li>Principal</li>
                     <li>ayuda</li>
@@ -77,42 +77,42 @@
                 otra lista desordenada-->
             </nav>
 
-            <section> <!--Agregar elementos a una misma seccion
-                <article id="cabecera1">-->
+                <section class="seccion"> <!--Agregar elementos a una misma seccion
+                    <article id="cabecera1">-->
                     <article>
-                    <hgroup> <!--para agrupar encabezados y no darle el mismo nivel de gerarquia que los encabezados-->
-                        <h1>Titulo del primer articulo</h1>
-                        <h2>Subtitulo del Primer Articulo</h2>
-                    </hgroup>
-                    <time datetime="25-04-2023">Publicado 25-04-2023</time>
-                    <p>Lorem ipsum dolor sit amet consectetur, <small>adipisicing elit</small>. Vitae vel doloremque aut autem voluptate magnam, <cite>fugiat voluptatem dolore eum</cite>, debitis at saepe laudantium voluptatum libero, <span>quod corrupti eius tenetur</span> quam!</p>
-                    <!--<img src="images/1.png" /> imagen de almacenamiento local-->
-                    <img src="https://i.pinimg.com/564x/02/4e/4c/024e4c04e38a58a9d793e7c79b57f11c.jpg" /> <!--imagen de internet-->
-                    <footer>
-                        <p>Comentarios (0)</p>
-                    </footer>
-                    <address>
-                        <a href="https://github.com/Cynosure-Project">Visita mi Sitio Web</a>
-                    </address>
-                </article>
-                <!--<article id="cabecera"> se puede repetir el id en diferentes elementos y seran afectados, pero la idea es que cada id sea unico
-                <article id="cabecera2">-->
-                <article>
-                    <hgroup>
-                        <h1>Titulo del segundo articulo</h1>
-                        <!--<h1 class="green">-->
-                        <h2>Subtitulo del Segundo Articulo</h2>
-                    </hgroup>
-                    <time datetime="25-04-2023">Publicado 25-04-2023</time>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, corporis a cum, ducimus perferendis ullam aspernatur, eveniet aliquam architecto commodi libero explicabo cumque? Eaque quis eos voluptatibus possimus quas ab.</p>
-                    <!--<p class="green">-->
-                    <footer>
-                        <p>Comentarios (0)</p>
-                    </footer>
-                </article>
-            </section>
+                        <hgroup> <!--para agrupar encabezados y no darle el mismo nivel de gerarquia que los encabezados-->
+                            <h1>Titulo del primer articulo</h1>
+                            <h2>Subtitulo del Primer Articulo</h2>
+                        </hgroup>
+                        <time datetime="25-04-2023">Publicado 25-04-2023</time>
+                        <!--<img src="images/1.png" /> imagen de almacenamiento local-->
+                        <img src="https://i.pinimg.com/564x/02/4e/4c/024e4c04e38a58a9d793e7c79b57f11c.jpg" /> <!--imagen de internet-->
+                        <p>Lorem ipsum dolor sit amet consectetur, <small>adipisicing elit</small>. Vitae vel doloremque aut autem voluptate magnam, <cite>fugiat voluptatem dolore eum</cite>, debitis at saepe laudantium voluptatum libero, <span>quod corrupti eius tenetur</span> quam!</p>
+                        <footer>
+                            <p>Comentarios (0)</p>
+                        </footer>
+                        <address>
+                            <a href="https://github.com/Cynosure-Project">Visita mi Sitio Web</a>
+                        </address>
+                    </article>
+                    <!--<article id="cabecera"> se puede repetir el id en diferentes elementos y seran afectados, pero la idea es que cada id sea unico
+                    <article id="cabecera2">-->
+                    <article>
+                        <hgroup>
+                            <h1>Titulo del segundo articulo</h1>
+                            <!--<h1 class="green">-->
+                            <h2>Subtitulo del Segundo Articulo</h2>
+                        </hgroup>
+                        <time datetime="25-04-2023">Publicado 25-04-2023</time>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, corporis a cum, ducimus perferendis ullam aspernatur, eveniet aliquam architecto commodi libero explicabo cumque? Eaque quis eos voluptatibus possimus quas ab.</p>
+                        <!--<p class="green">-->
+                        <footer>
+                            <p>Comentarios (0)</p>
+                        </footer>
+                    </article>
+                </section>
 
-            <aside> <!--contenido lateral-->
+            <aside class="columna"> <!--contenido lateral-->
                 <blockquote cite="https://www.youtube.com/watch?v=rbuYtrNUxg4">
                     Mensaje 1
                 </blockquote>
@@ -124,7 +124,7 @@
 
             <!--color: color de letra
             <footer style="color: white; background: black"> pie de pagina de un elemento o pagina web-->
-            <footer>
+            <footer class="pie">
                 Derechos Reservados 2018-2023
             </footer>
 
