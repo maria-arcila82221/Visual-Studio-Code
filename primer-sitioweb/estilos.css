@@ -63,6 +63,7 @@ body {
     text-align: left;
 }
 
+/*el orden de eso .menu li es segun a como esten escritas las etiquetas alla(si li esta dentro de menu va asi, si no, al contrario)*/
 .menu li { /*todos los elementos li que esten dentro de un elemento que tenga la clase menu*/
     list-style: none; /*quitar diseno por defecto de las listas*/
     padding: 5px; /*separacion de cada li*/
@@ -120,4 +121,6 @@ img {
     /*text-align: center; se alinee en el centro*/
     margin: 20px auto; /*se alinee de manera automatica(centro). Asi por que no es texto*/
 }
+
+
 
