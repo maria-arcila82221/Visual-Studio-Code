@@ -4,14 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href=""> primero necesita el archivo CSS para saber como quedara-->
+    <!--<script>
+        function aplicarEstilos(){
+            document.getElementById('texto2').style.color = 'blue';
+            document.getElementById('texto2').style.background = 'red';
+            document.getElementById('texto2').style.fontFamily = 'Arial';
+            document.getElementById('texto2').style.fontSize = '30px';
+        }
+
+        function yatoTriste(){
+            document.getElementById('triste').src = 'assets/images/kaizokucujoh1.gif';
+        }
+
+        function yatoFeliz(){
+            document.getElementById('triste').src = 'assets/images/kaizokucujoh.gif'
+        }
+
+        //las funciones aqui si tienen que ser mediante una funcion para ser invocadas por una etiqueta
+    </script>-->
     <title>Practica Javascript</title>
 </head>
 <body>
-
+        <!--mostrar fecha actual en una etiqueta p-->
     <h2>Fecha actual</h2>
     
     <button onclick="document.getElementById('fecha').innerHTML = Date()">Mostrar fecha</button> <!--boton-->
     <p id="fecha"></p>
+
+    <hr><!--hr: cambio de tema en parrafos, agrega una linea al documento (pues es un cambio de tema)-->
+
+        <!--mostrar mensaje en una etiqueta p-->
+    <!--comillas sencillas dentro de dobles para que las coja-->
+    <button onclick="document.getElementById('mensaje').innerHTML = 'Practica Javascript'">Mostrar mensaje</button>
+    <p id="mensaje"></p>
+
+    <hr>
+
+        <!--cambiando la propiedad de una etiqueta-->
+    <button onclick="yatoTriste()">Triste</button>
+    <img src="assets/images/kaizokucujoh1.gif" alt="" id="triste">
+    <button onclick="yatoFeliz()">Feliz</button>
+    <!--atraves de javascript se puede cambiar el atributo de una propiedad de una etiqueta de HTML-->
+
+    <hr>
+
+        <!--cambiar el estilo de un texto-->
+    <button onclick="document.getElementById('texto').style.display = 'none'">Cambiar estilo</button><!--con none lo escondo-->
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magnam quia quasi laboriosam rerum, ipsam ipsum, illum distinctio repudiandae ab facilis provident earum vitae, quo velit placeat consequuntur fuga sit!</p>
+    <button onclick="document.getElementById('texto').style.display = 'block'">Cambiar estilo</button><!--con block lo muestro-->
+
+    <hr>
+
+        <!--aplicar estilos por medio de una funcion javascript en el mismo archivo-->
+    <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis modi quibusdam? Eaque animi accusantium ea mollitia iusto! Fuga sequi distinctio saepe illum corporis rem aspernatur veniam quam deleniti tempore!</p>
+    <button onclick="aplicarEstilos()">Aplicar estilo</button>
+
+    <hr>
+
+        <!--mostrar texto por medio de un alert()-->
+    <button onclick="alert('Hola mundo!!!')">Mostrar mensaje</button>
+
+        <!--mostrar texto por medio de consola-->
+    <button onclick="console.log('Hola mundo!!!')">Mostrar mensaje</button>
+
+        <!--operar con datos numericos-->
+    <!--(form: formulario)-->
+    <form action="">
+        <input type="number" name="num1" id="num1">
+        <input type="number" name="num2" id="num2">
+        <button type="button" onclick="operacionesJS(1, parseInt(document.getElementById('num1').value), parseInt(document.getElementById('num2').value))">+</button><!--onclick: cuando de click pase algo-->
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+    </form>
+    
+    <p id="res"></p>
+
+    <script src="assets/js/codigo.js"></script><!--luego interpreta el codigo javascript para saber como funcionara, el codigo se ejecuta despues de que la pagina ya haya cargado-->
 
 </body>
 </html>
