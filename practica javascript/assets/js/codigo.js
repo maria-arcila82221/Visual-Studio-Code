@@ -57,7 +57,7 @@ function validarForm(){
 function validarNumero(){
     var num = document.getElementById("numero").value;
     
-    //isNaN: si este valor el texto devuelve true, si no false
+    //isNaN: si este valor es texto devuelve true, si no false
     if(isNaN(num) || num<1 || num>10){
         alert("el valor no es correcto");
     } else {
