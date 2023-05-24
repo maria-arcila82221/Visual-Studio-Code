@@ -18,22 +18,34 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <input type="text" name="" id="nombre">
+
+        <input type="text" name="" id="nombre" placeholder="Nombre">
+        <br>
+        <input type="text" name="" id="apellido" placeholder="Apellido">
         <br><br>
-        <input type="date" name="" id="feccha">
+        <input type="date" name="" id="fecha">
         <br><br>
         <button type="button" id="btn1">Insertar</button>
+        <button type="button" id="btn2">Resaltar</button>
 
         <table class="table" id="tabla">
-            <thead>
-                <td>Nombre Completo </td>
-                <td>Fecha de Nacimiento</td>
-                <td>Edad</td>
+            <thead><!--thead: para agrupar filas que contienen los encabezados de una tabla-->
+                <th>Nombre Completo </th><!--th: encabezados de columna-->
+                <th>Fecha de Nacimiento</th>
+                <th>Edad</th>
             </thead>
-            <tbody>
-               
+            <tbody id="tbody"><!--tbody: agrupar las filas que contienen los datos principales de una tabla-->
+
             </tbody>
         </table>
+        <!--<tr> (table row): La etiqueta <tr> se utiliza para definir una fila en una tabla. Cada celda de la fila se define utilizando la etiqueta <td> (para datos de celda) o <th> (para encabezados de columna). Las filas se colocan dentro de un elemento <tbody> o <thead>.
+
+        <thead> (table head): La etiqueta <thead> se utiliza para agrupar las filas que contienen los encabezados de una tabla. Por lo general, se coloca antes del elemento <tbody>. Los encabezados de columna se definen utilizando la etiqueta <th> dentro de las filas del <thead>. En una tabla bien estructurada, el <thead> se utiliza para separar los encabezados de las filas de datos.
+
+        <tbody> (table body): La etiqueta <tbody> se utiliza para agrupar las filas que contienen los datos principales de una tabla. Por lo general, se coloca después del <thead>. Los datos de celda se definen utilizando la etiqueta <td> dentro de las filas del <tbody>. El <tbody> se utiliza para distinguir los datos de la tabla del encabezado, pie de tabla u otros elementos relacionados.
+
+        En resumen, <tr> se utiliza para definir filas individuales en una tabla, <thead> se utiliza para agrupar los encabezados de columna y <tbody> se utiliza para agrupar los datos de la tabla. -->
+
     </main>
     <footer>
         <!-- place footer here -->
@@ -49,6 +61,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--siempre las librerias externas van primero, luego mis propios archivos-->
+
+    <script src="assets/js//moment.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>

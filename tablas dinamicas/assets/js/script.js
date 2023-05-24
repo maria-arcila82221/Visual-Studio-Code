@@ -1,59 +1,34 @@
 $(function(){
-
-    $("#btn1").click(function (e) { 
+   
+    $("#btn1").click(function (e) {
         e.preventDefault();
         var nombre = $("#nombre").val();
+        var apellido = $("#apellido").val();
         var fecha = $("#fecha").val();
-
-        alert(fecha)
-
-        $("#tabla").append("<tr><td>" + nombre + "</td></tr>" + "<tr><td>" + fecha + "</td></tr>" + "<tr><td>" + edad + "</td></tr>"); 
+        var edad = moment().diff(moment(fecha, 'YYYY-MM-DD'), 'years');
+       
+        $("#tbody").append("<tr><td>" + nombre + " " + apellido + "</td><td>" + fecha + "</td><td>" + edad + "</td></tr>");
+        //tr: se utiliza para definir una fila en una tabla
+        //td: definir cada celda de la tabla
     });
 
-    $(function fecha(fecha) {
-        var strDate = fecha;
-    
-        var yyyy = strDate.substring(0,4);
-        var mm   = strDate.substring(5,7);
-        var dd   = strDate.substring(8,10);
-        strDate  = yyyy + '/' + mm + '/' + dd;
-
-        return strDate;
-    })
-
-    $(function edad(fecha) {
-        var fecha2 = Tfecha(fecha);
-        var hoy = new Date();
-        var cumpleanos = new Date(fecha2);
-        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-        var m = hoy.getMonth() - cumpleanos.getMonth();
-
-        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-            edad--;
-        }
-
-        return edad;
-    })
-
-    $(function Tfecha(fecha) {
-        var strDate = fecha;
-    
-        var yyyy = strDate.substring(0,4);
-        var mm   = strDate.substring(5,7);
-        var dd   = strDate.substring(8,10);
-        strDate  = dd + '/' + mm + '/' + yyyy;
-
-        return strDate;
-    })
-
-    $("#btn2").click(function (e) { 
+    $("#btn2").click(function (e) {
         e.preventDefault();
-        
-        $(selector).each(function (index, element){
-
-        })
+       
+        $('table tr').each(function() {//each(): se utiliza para iterar sobre un conjunto de elementos seleccionados y ejecutar una función para cada uno de ellos.
+            // Obtener el valor de la columna de edad
+            var edad = parseInt($(this).find('td:nth-child(3)').text());
+            //var edad = parseInt($(this).find('td:nth-child(3)').text()): Dentro de cada fila, busca el tercer elemento <td> (columna) utilizando el selector :nth-child(3). Luego, obtiene el texto dentro de esa columna y lo convierte a un número entero utilizando parseInt()
+       
+            // Comprobar si la edad es mayor a 18
+            if (edad > 18) {
+              // Resaltar la fila
+              $(this).css('background-color', 'yellow');
+              //$(this): se refiere a la fila actual que se está recorriendo en el bucle each()
+            }
+        });
     });
-
+   
 })
 
 //local storage y session storage: consulta
