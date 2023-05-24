@@ -13,10 +13,8 @@ $(function(){
 
     $(".btn").click(function (e) {
         e.preventDefault();
-       
-        var thisID = $(this).attr("id");
 
-        switch(thisID) {
+        switch($(this).attr("id")) {
             case "btn1":
                 $("#tbody tr:last-child").addClass("prod1");
             break;
