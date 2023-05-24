@@ -8,9 +8,10 @@
 </head>
 <body>
     <!--onsubmit: al someter al usuario a dar click en este boton llamaremos a tal codigo(haremos tal cosa)-->
-    <form id="formulario" name="formulario" action="" onsubmit="validarForm()">
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        <input type="button" value="Someter">
+    <form id="formulario" name="formulario" action="" onsubmit=""><!--onsubmit: se utiliza en HTML para especificar el código JavaScript que se ejecutará cuando se envíe un formulario-->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><!--placeholder: se utiliza en los elementos de formulario en HTML, como input y textarea, para proporcionar un texto de ejemplo o una indicación sobre el tipo de información que se espera que se ingrese en ese campo-->
+        <input type="button" value="Someter" onclick="validarFormulario()"><!--value: se utiliza para establecer el valor predeterminado de un campo de entrada en HTML y para acceder al valor actual o establecer un nuevo valor utilizando JavaScript.-->
+        <!--la diferencia principal es que <input type="button"> es un campo de entrada que se utiliza como botón y se controla principalmente mediante JavaScript, mientras que <button></button> es un elemento de botón más versátil que permite contenido interno y tiene un comportamiento predeterminado en los eventos de clic.-->
         <hr>
         <!--type: que tipo de dato entrara por el cuadrito-->
         <input type="text" name="numero" id="numero" placeholder="Numero">
