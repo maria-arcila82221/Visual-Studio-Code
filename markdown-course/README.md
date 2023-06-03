@@ -84,8 +84,10 @@ print("hello world")
 
 <!-- tareas, cuadrito de check, no se ve aqui en visual studio code por que son reglas propias de github. pero alli si que se veran -->
 * [x] Task 1
-* [] Task 2
-* [] Task 3
+* [ ] Task 2
+* [ ] Task 3
 * [x] Task 4
+
+@maria-arcila82221 :whale2: :snail:
 
 
