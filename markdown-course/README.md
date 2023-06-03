@@ -76,9 +76,9 @@ print("hello world")
 
 <!-- simbolo de admiracion para que no reconozca esto como un enlace si no mas bien como una imagen -->
 ![armin, eren and mikasa](https://i.pinimg.com/564x/10/91/1e/10911e21f3faf1b52a683a4b78c6a351.jpg)
-![armin, eren and mikasa](https://i.pinimg.com/474x/e9/e6/96/e9e696fac93798389d9178873c2e31b8.jpg "eren and mikasa")
+![eren and mikasa](https://i.pinimg.com/474x/e9/e6/96/e9e696fac93798389d9178873c2e31b8.jpg "eren and mikasa")
 ![PARADIS](Redwarrior.png)
-![PARADIS](arminandannie.png "kawaii")
+![armin and annie](arminandannie.png "kawaii")
 
 <!-- GITHUB MARKDOWN -->
 
