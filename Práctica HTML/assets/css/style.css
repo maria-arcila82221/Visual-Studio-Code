@@ -1,0 +1,33 @@
+h1{
+    
+    background-color: wheat;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 200%;
+}
+
+img{
+    height: 300px;;
+    width: 200px;;
+}
+
+#Encabezado1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red; 
+}
+
+.clase1{
+    color: blue;
+    /* border: 1px solid blueviolet; */
+    border-color: brown;
+}
+
+.clase2{
+    font-size: 200px;
+}
+
+.clase3{
+    font-style: italic;
+}

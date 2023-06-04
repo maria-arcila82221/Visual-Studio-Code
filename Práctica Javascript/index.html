@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Javascript</title>
+</head>
+<body>
+
+    <!-- Mostrar fecha actual en un etiqueta p -->
+    <h2>Fecha actual</h2>
+
+    <button onclick="document.getElementById('fecha').innerHTML = Date()">Mostrar fecha</button>
+    <p id="fecha"></p>
+
+    <hr>
+
+    <!-- Mostrar mensaje en una etiqueta p -->
+    <button onclick="document.getElementById('mensaje').innerHTML = 'Práctica Javascript'">Mostrar mensaje</button>
+    <p id="mensaje"></p>
+
+    <hr>
+
+    <!-- Cambiando la propiedad de una etiqueta -->
+    <button onclick="apagarBombillo()">Apagado</button>
+    <img src="assets/images/pic_bulboff.gif" alt="" id="bombillo">
+    <button onclick="encenderBombillo()">Encendido</button>
+
+    <hr>
+    <!-- Cambiar el estilo de un texto -->
+
+    <button onclick="document.getElementById('texto').style.display = 'none'">Cambiar estilo</button>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non harum quae iusto obcaecati, magnam accusamus facilis illo a blanditiis ullam eos sed cum aperiam dolores voluptatum atque dolorem doloremque placeat!</p>
+    <button onclick="document.getElementById('texto').style.display = 'block'">Cambiar estilo</button>
+
+    <hr>
+    <!-- Aplicar estilos por medio de una función Javascript en el mismo archivo -->
+
+    <p id="texto2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ullam voluptatem similique aspernatur ad nam, recusandae dignissimos repudiandae, error laborum dolore soluta! Fugiat sequi omnis, numquam nisi hic a voluptates!</p>
+    <button onclick="aplicarEstilos()">Aplicar estilo</button>
+
+    <hr>
+    <!-- Mostrar texto por medio de un alert() -->
+    <button onclick="alert('Hola Mundo !!!')">Mostar mensaje</button>
+
+    <hr>
+    <!-- Mostrar texto por consola -->
+    <button onclick="console.log('Hola Mundo !!!')">Mostar mensaje</button>
+
+    <!-- Operar con datos numéricos -->
+
+    <form action="">
+        <input type="number" name="num1" id="num1">
+        <input type="number" name="num2" id="num2">
+        <button type="button" onclick="operacionesJS(1)">+</button>
+        <button type="button" onclick="operacionesJS(2)">-</button>
+        <button type="button" onclick="operacionesJS(3)">x</button>
+        <button type="button" onclick="operacionesJS(4)">/</button>
+    </form>
+
+    <p id="res"></p>
+
+    <script src="assets/js/codigo.js"></script>
+</body>
+</html>
