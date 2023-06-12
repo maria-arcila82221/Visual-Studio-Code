@@ -62,7 +62,7 @@
 
 #ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-left: auto;
 }
 
@@ -78,7 +78,7 @@
 
 
 #btn {
-  background-color: #fff;
+  background-color: #ffffff00;
   color: #31334a;
 }
 
@@ -113,6 +113,6 @@ i {
 }
 
 .card {
-  background-color: #dddff1;
+  background-color: #dcf0f4;
 }
 
