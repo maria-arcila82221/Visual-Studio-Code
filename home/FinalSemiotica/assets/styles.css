@@ -212,16 +212,12 @@ body{
   margin-left: 5%;
 }
 
-@media (max-width: 700px) {
-  #eee{
-       margin-top: 35%;
-       margin-left:5%;
-      z-index:2;
- }
+#eee{
+  margin-top: 10%;
+  margin-left: 5%;
 }
-.table {
-  text-align: right;
-}.seccion-perfil-usuario .perfil-usuario-header {
+
+.seccion-perfil-usuario .perfil-usuario-header {
   width: 100%;
 
   background: linear-gradient(#7ffa99, transparent);
